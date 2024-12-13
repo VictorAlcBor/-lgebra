@@ -1,0 +1,16 @@
+import numpy as np
+
+# Matriz de coeficientes
+A = np.array([[115, 27, 19],
+              [27, 19, 3],
+              [19, 3, 5]])
+
+# Vector de constantes
+B = np.array([144, 38, 22])
+
+# Resolver el sistema Ax = B
+solucion = np.linalg.solve(A, B)
+
+# Mostrar resultados
+a, b, c = solucion
+print(solucion)
